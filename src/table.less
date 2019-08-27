@@ -1,0 +1,225 @@
+//:global {
+  .byted-weektime {
+    margin-left: 104px;
+    margin-bottom: 10px
+  }
+
+  .byted-weektime .byted-popover {
+    width: 128px
+  }
+
+  .byted-weektime .btn-xs {
+    padding: 1px 5px;
+    font-size: 12px;
+    line-height: 1.5;
+    border-radius: 3px
+  }
+
+  .byted-weektime .calendar {
+    -webkit-user-select: none;
+    position: relative;
+    display: inline-block
+  }
+
+  .byted-weektime .calendar .schedule {
+    background: #2F88FF;
+    width: 0;
+    height: 0;
+    position: fixed;
+    display: none;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    -webkit-transition: all 400ms ease;
+    -moz-transition: all 400ms ease;
+    -ms-transition: all 400ms ease;
+    transition: all 400ms ease
+  }
+
+  .byted-weektime .calendar .calendar-table {
+    border-collapse: collapse;
+    border-radius: 4px
+  }
+
+  .byted-weektime .calendar .calendar-table tr .calendar-atom-time:hover {
+    background: #f5f5f5
+  }
+
+  .byted-weektime .calendar .calendar-table tr .ui-selected {
+    background: #2F88FF
+  }
+
+  .byted-weektime .calendar .calendar-table tr .ui-selected:hover {
+    background: #2F88FF
+  }
+
+  .byted-weektime .calendar .calendar-table tr, .byted-weektime .calendar .calendar-table td, .byted-weektime .calendar .calendar-table th {
+    border: 1px solid #E4E9ED;
+    font-size: 12px;
+    text-align: center;
+    min-width: 11px;
+    line-height: 1.8em;
+    -webkit-transition: background 200ms ease;
+    -moz-transition: background 200ms ease;
+    -ms-transition: background 200ms ease;
+    transition: background 200ms ease
+  }
+
+  .byted-weektime .calendar .calendar-table tbody tr {
+    height: 30px
+  }
+
+  .byted-weektime .calendar .calendar-table tbody tr td:first-child {
+    background: #F8F9FA
+  }
+
+  .byted-weektime .calendar .calendar-table thead th, .byted-weektime .calendar .calendar-table thead td {
+    background: #F8F9FA
+  }
+
+  .byted-weektime .calendar .calendar-table .tip-text {
+    color: #999;
+    margin-right: 8px
+  }
+
+  .byted-weektime .calendar .calendar-table .td-selected-time {
+    text-align: left;
+    line-height: 2.4em
+  }
+
+  .byted-weektime .calendar .calendar-table .td-selected-time p {
+    max-width: 571px;
+    word-break: break-all;
+    margin: 8px 0;
+    font-size: 14px;
+    line-height: 22px
+  }
+
+  .byted-weektime .calendar .calendar-table .td-selected-time p:last-child {
+    margin-bottom: 12px
+  }
+
+  .byted-weektime .calendar .calendar-table .td-selected-time p:first-child {
+    margin-top: 4px
+  }
+
+  .byted-weektime .calendar .calendar-table .td-table-tip {
+    line-height: 2.4em;
+    padding: 0 12px 0 19px;
+    background: #fff !important
+  }
+
+  .byted-weektime .calendar .calendar-table .td-table-tip .clearfix {
+    height: 46px;
+    line-height: 46px
+  }
+
+  .byted-weektime .calendar .calendar-table .td-table-tip .pull-left {
+    font-size: 14px;
+    color: #333333
+  }
+
+  .byted-weektime .week-td {
+    width: 75px;
+    padding: 20px 0
+  }
+
+  .byted-weektime a {
+    cursor: pointer;
+    color: #2F88FF;
+    font-size: 14px
+  }
+
+  .byted-weektime .readable-weektime {
+    font-size: 12px;
+    line-height: 2em;
+    max-width: 640px
+  }
+
+  .byted-weektime .readable-weektime .btn {
+    float: right
+  }
+
+  .byted-weektime .readable-weektime ul {
+    padding-left: 0;
+    padding-right: 90px
+  }
+
+  .byted-weektime .readable-weektime ul li {
+    list-style: none
+  }
+
+  .byted-weektime .readable-weektime ul li span {
+    color: #666
+  }
+
+  .byted-weektime .readable-weektime ul li .select-time {
+    -webkit-user-select: none;
+    user-select: none;
+    margin: 0 2px;
+    cursor: pointer
+  }
+
+  .byted-weektime .readable-weektime ul li .select-time .del {
+    opacity: 0
+  }
+
+  .byted-weektime .readable-weektime ul li .select-time:hover {
+    color: #333
+  }
+
+  .byted-weektime .readable-weektime ul li .select-time:hover .del {
+    opacity: 1
+  }
+
+  #readableWeekTime {
+    font-size: 12px;
+    line-height: 2em
+  }
+
+  #readableWeekTime ul {
+    padding-left: 20px
+  }
+
+  #readableWeekTime ul li span {
+    margin: 0 3px;
+    color: #666
+  }
+
+  #readableWeekTime ul li time {
+    font-size: 14px;
+    padding: 0 5px
+  }
+
+  #readableWeekTime ul li i.del {
+    width: 15px;
+    height: 15px;
+    background-color: #d9534f;
+    display: none;
+    z-index: 10;
+    color: #fff;
+    font-size: 13px;
+    line-height: 17px;
+    text-align: center;
+    cursor: pointer;
+    font-family: '宋体';
+    font-style: normal;
+    border-radius: 20px
+  }
+
+  #readableWeekTime ul li:hover i.del {
+    display: inline-block
+  }
+
+  #readableWeekTime ul li i.del:hover {
+    background-color: #d2322d
+  }
+
+  #readableWeekTime .btn {
+    float: right
+  }
+
+  .analysis {
+    line-height: 30px
+  }
+//}
